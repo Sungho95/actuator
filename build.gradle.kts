@@ -21,14 +21,18 @@ repositories {
 }
 
 dependencies {
+    // Spring Actuator
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
+    // Spring Boot Admin
     implementation("de.codecentric:spring-boot-admin-starter-server")
     implementation("de.codecentric:spring-boot-admin-starter-client")
 
+    // Prometheus
     implementation("io.micrometer:micrometer-registry-prometheus")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
